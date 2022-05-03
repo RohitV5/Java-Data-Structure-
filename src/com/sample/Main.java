@@ -11,8 +11,13 @@ public class Main {
     //main function is the entry point
     public static void main(String[] args) {
 
-        butterflyPattern();
+        numberPyramid();
     }
+
+
+
+
+
 
 
 }
