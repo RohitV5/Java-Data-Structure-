@@ -8,6 +8,7 @@ import static com.sample.Functions.*;
 import static com.sample.Arrays.*;
 import static com.sample.TwoDArrays.*;
 import static com.sample.Strings.*;
+import static  com.sample.BitOperations.*;
 
 
 
@@ -17,7 +18,7 @@ public class Main {
 
     //main function is the entry point
     public static void main(String[] args) {
-        reverseString();
+        getBitAtPosition(6,2);
     }
 
 
