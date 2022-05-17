@@ -11,7 +11,7 @@ operators: arithmetic, logic, comparison
 
 Math class - some useful functions like min, max , random
 
-strings are immutable - once defined u can' change its value.
+strings are immutable - once defined u can' change its value in memory.
 
 
 https://www.youtube.com/watch?v=Dr4PpNa7AYo&list=PLfqMhTWNBTe3LtFWcvwpqTkUSlB32kJop&index=6
