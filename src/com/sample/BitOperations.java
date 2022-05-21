@@ -59,4 +59,40 @@ public class BitOperations {
         // using left shift of 1 by number of positions.
 
     }
+
+    public static void clearBitAtPosition(int number,  int position) {
+        //Bit mask 1 << position
+        //Operation: AND with NOT Bit mask
+        int bitMask = 1 << position;
+        int notBitMask = ~(bitMask);
+
+        int newNumber = notBitMask & number;
+        System.out.println(newNumber);
+
+    }
+
+
+    //Update the number at position with an updateKey(0 or 1)
+    public static void updateBitAtPosition(int number,  int position, int updateKey) {
+        //Bit mask 1 << position
+        //For zero Operation: AND with NOT Bit mask --> zero operation
+        //For one Operation: OR  --> clear operation
+
+
+        if(updateKey == 1){
+            setBitAtPosition(number, position);
+        }else{
+            clearBitAtPosition(number, position);
+        }
+
+    }
+
+
+    //LOGIC: why create a bitmask which is shifted position times -> because we only want to manipulate the bit at specific position
+    //so we have to move 1 to somewhere like 100 and that can be done by shifting. this creates a bitmask.
+
+    // To set 1 to 1 and set 0 to 1 we need final result as 1 which can be done using OR
+    // To clear 1 or 0 to zero we need to perform an AND operation with 0 so output will always be zero. so we create a bitmask like -> 1000 (perform NOT after shifting) --> 0111 for clearing 4th position
+
+    //WOW this logic was fun! And I got the concept!
 }

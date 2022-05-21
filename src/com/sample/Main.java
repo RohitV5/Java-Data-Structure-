@@ -18,7 +18,7 @@ public class Main {
 
     //main function is the entry point
     public static void main(String[] args) {
-        setBitAtPosition(6,3);
+        updateBitAtPosition(8,2,1);
     }
 
 
