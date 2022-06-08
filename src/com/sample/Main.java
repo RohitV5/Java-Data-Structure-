@@ -9,6 +9,8 @@ import static com.sample.Arrays.*;
 import static com.sample.TwoDArrays.*;
 import static com.sample.Strings.*;
 import static  com.sample.BitOperations.*;
+import static  com.sample.SortBasic.*;
+import static com.sample.Recursion.*;
 
 
 
@@ -18,7 +20,7 @@ public class Main {
 
     //main function is the entry point
     public static void main(String[] args) {
-        updateBitAtPosition(8,2,1);
+        printNumberAsc(5,10);
     }
 
 
