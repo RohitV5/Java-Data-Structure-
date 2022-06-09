@@ -24,7 +24,7 @@ public class Recursion {
 
     }
 
-
+    //Print sum on n natural numbers
     public static void printSum(int i,int n,int sum) {
         if(i==n){
             sum += i;
