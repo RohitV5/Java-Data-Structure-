@@ -3,19 +3,58 @@ package com.sample;
 import java.util.Properties;
 
 public class LinkedList {
+    //Head is a must to track the node elements
+    Node head;
 
-    class Node<T> {
-        T data;
+    //Size to track the size of a linked list
+    private int size;
+
+    //Java utils class has a built-in linked list type
+
+    LinkedList(){
+        this.size = 0;
+    }
+
+    public Node get(int index) {
+        Node currNode = head;
+        for(int i=1;i<index;i++){
+            currNode = currNode.next;
+        }
+        return currNode;
+    }
+
+    public int search(int data) {
+        Node currNode = head;
+        int position = 1;
+        if(currNode.data == data){
+            return position;
+        }
+
+        for(int i=1;i<size;i++){
+            currNode = currNode.next;
+            position++;
+            if(currNode.data == data){
+                return position;
+            }
+        }
+
+        return 0;
+    }
+
+
+    class Node {
+        int data;
         //Node class has next as its own type so that it points to its own type
         Node next;
 
-        Node (T data){
+        Node (int data){
             this.data = data;
             this.next = null;
+            size++;
         }
     }
 
-    Node head;
+
 
 
     //ArrayList   Insert O(n)   Search O(1)
@@ -31,7 +70,7 @@ public class LinkedList {
      * First node is called HEAD
      * Last node is TAIL
      */
-    public void addFirst(String data){
+    public void addFirst(int data){
         Node newNode = new Node(data);
         if(head == null){
             head = newNode;
@@ -42,7 +81,7 @@ public class LinkedList {
         head = newNode;
     }
 
-    public void addLast(String data){
+    public void addLast(int data){
         Node newNode = new Node(data);
         if(head == null){
             head = newNode;
@@ -62,7 +101,12 @@ public class LinkedList {
     }
 
 
-    public void PrintList() {
+    public int getSize() {
+        return size;
+    }
+
+
+    public void printList() {
         if(head == null){
             System.out.println("List is empty");
             return;
@@ -82,6 +126,7 @@ public class LinkedList {
             System.out.println("The list is empty");
             return;
         }
+        size--;
         head = head.next;
 
     }
@@ -92,10 +137,13 @@ public class LinkedList {
             System.out.println("The list is empty");
             return;
         }
+        size--;
         if(head.next == null){
             head = null;
             return;
         }
+
+        //if list has more than one element;
         Node secondlast = head;
         Node lastNode = head.next;
         while (lastNode.next != null){
@@ -107,6 +155,24 @@ public class LinkedList {
         secondlast.next = null;
     }
 
+    public static void main(String[] args) {
+        LinkedList list = new LinkedList();
+        list.addFirst(21);
+        list.addLast(22);
+        list.addFirst(20);
+        list.deleteFirst();
+        list.printList();
+        list.getSize();
+
+
+        //iterating over custom linked list
+        for (int i = 1; i <= list.getSize();i++){
+            System.out.println(list.get(i).data +"");
+        }
+
+        System.out.println("Found at position"+ list.search(21));
+
+    }
 
 
 

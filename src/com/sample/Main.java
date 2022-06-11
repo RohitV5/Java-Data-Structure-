@@ -21,10 +21,21 @@ public class Main {
     //main function is the entry point
     public static void main(String[] args) {
         LinkedList list = new LinkedList();
-        list.addFirst("21");
-        list.addLast("22");
-        list.addFirst("20");
-        list.PrintList();
+        list.addFirst(21);
+        list.addLast(22);
+        list.addFirst(20);
+        //list.deleteFirst();
+        //list.printList();
+        //list.getSize();
+
+
+        //iterating over custom linked list
+        //for (int i = 1; i <= list.getSize();i++){
+        //System.out.println(list.get(i).data +"");
+        //
+        //}
+        System.out.println("Found at position"+ list.search(24));
+
 
     }
 
