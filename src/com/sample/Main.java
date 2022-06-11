@@ -20,7 +20,12 @@ public class Main {
 
     //main function is the entry point
     public static void main(String[] args) {
-        printNumberAsc(5,10);
+        LinkedList list = new LinkedList();
+        list.addFirst("21");
+        list.addLast("22");
+        list.addFirst("20");
+        list.PrintList();
+
     }
 
 
