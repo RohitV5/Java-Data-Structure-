@@ -3,6 +3,18 @@ package com.sample;
 import java.util.Properties;
 
 public class LinkedList {
+
+    class Node {
+        int data;
+        Node next;         //Node class has next as its own type so that it points to its own type
+
+        Node (int data){
+            this.data = data;
+            this.next = null;   //for new node the next is always null
+            size++;
+        }
+    }
+
     //Head is a must to track the node elements
     Node head;
 
@@ -42,17 +54,7 @@ public class LinkedList {
     }
 
 
-    class Node {
-        int data;
-        //Node class has next as its own type so that it points to its own type
-        Node next;
 
-        Node (int data){
-            this.data = data;
-            this.next = null;
-            size++;
-        }
-    }
 
 
 
@@ -179,4 +181,6 @@ public class LinkedList {
 
 }
 
+
+// https://www.youtube.com/watch?v=oAja8-Ulz6o&t=1438s&ab_channel=ApnaCollege
 
