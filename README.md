@@ -66,6 +66,29 @@ Steps to solve DSA
 8.Refactor the solution. If necessary, consider refactoring the solution to improve readability maintainability and performance.
 9.Analyze the space and time complexity. It is important to measure how well the solution performs in terms of time and space complexity.
 
+It is difficult to provide a definitive ranking of all data structures and algorithms based on difficulty, as the level of difficulty can vary depending on a person's background and experience. However, some common data structures and algorithms that are considered to be relatively easy to understand and implement include:
+
+Arrays
+Linked Lists
+Stacks
+Queues
+Trees (Binary Trees, AVL Trees, etc.)
+Hash Tables
+Sorting algorithms (Bubble Sort, Selection Sort, Insertion Sort, etc.)
+Searching algorithms (Linear Search, Binary Search, etc.)
+As the complexity increases, below are the dsa are considered to be more difficult to understand and implement:
+
+Graphs (Graph Traversal, Shortest Path, etc.)
+Dynamic Programming (Fibonacci sequence, Longest Common Subsequence, etc.)gch
+Greedy Algorithms
+Divide and Conquer (Merge Sort, Quick Sort, etc.)
+Backtracking (N-Queens, Sudoku Solver, etc.)
+Heaps (Heap Sort, Priority Queue, etc.)
+Tries (Prefix Trees)
+Advanced algorithms like Bellman-Ford, Dijkstra, A*, Prim Algorithm
+Please note that this is just a rough guide and the actual difficulty level may vary depending on the individual.
+
+
 
 
 
