@@ -1,0 +1,4 @@
+Prims
+Kruskal
+Dijkstra
+Bell
