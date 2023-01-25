@@ -75,6 +75,7 @@ Queues
 Trees (Binary Trees, AVL Trees, etc.)
 Hash Tables
 Sorting algorithms (Bubble Sort, Selection Sort, Insertion Sort, etc.)
+Hashing
 Searching algorithms (Linear Search, Binary Search, etc.)
 As the complexity increases, below are the dsa are considered to be more difficult to understand and implement:
 
